@@ -5,167 +5,136 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bond Processing | Budget Bail Bonds®™</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-body{
+:root {
+  --primary:#800020; /* Burgundy */
+  --secondary:#4B0082; /* Purple */
+  --accent:#000000; /* Black */
+  --cta:#ffffff; /* White */
+  --bg:#F9F9F9;
+  --card-bg:#ffffff;
+  --hover-color:#D4AF37; /* Gold hover */
+}
+
+body {
   margin:0;
-  font-family:'Poppins',sans-serif;
-  background:#0d0b14;
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--accent);
+}
+
+header {
+  background:var(--primary);
   color:white;
-  line-height:1.7;
+  padding:22px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
 }
 
-/* HEADER */
-header{
-  background:linear-gradient(90deg,#800020,#3b0a45,#000);
-  padding:18px 20px;
-  text-align:center;
-  border-bottom:3px solid gold;
+header h1 {
+  font-weight:700;
+  font-size:24px;
+  margin:0;
 }
 
-.logo{
-  font-size:34px;
-  font-weight:800;
-  letter-spacing:2px;
-  background:linear-gradient(45deg,gold,#fff,#800020,#6a0dad);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-
-/* NAVIGATION */
-nav{
-  background:#000;
-  padding:12px;
-  text-align:center;
-}
-
-nav a{
+nav a {
   color:white;
-  margin:0 15px;
+  margin-left:25px;
   text-decoration:none;
-  font-weight:600;
+  font-weight:500;
+  padding:6px 0;
 }
 
-nav a:hover{
-  color:gold;
+nav a:hover,
+nav a.active {
+  color:var(--hover-color);
+  font-weight:700;
 }
 
-/* CONTENT */
-.section{
-  max-width:950px;
+.section {
+  max-width:900px;
   margin:auto;
-  padding:50px 20px;
+  padding:60px 20px;
 }
 
-h1{
-  text-align:center;
-  color:gold;
-  margin-bottom:10px;
+h2 {
+  color:var(--primary);
+  margin-bottom:20px;
 }
 
-h2{
-  color:gold;
-  margin-top:40px;
-}
-
-.box{
-  background:#16131f;
+.card {
+  background:var(--card-bg);
   padding:25px;
-  border-left:4px solid gold;
-  border-radius:6px;
-  margin-top:20px;
+  border-radius:8px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.05);
+  margin-bottom:30px;
 }
 
-/* STEPS */
-.step{
+ol, ul {
+  padding-left:20px;
   margin-bottom:25px;
 }
 
-.step strong{
-  color:gold;
-}
-
-/* FOOTER */
-footer{
+footer {
+  background:var(--primary);
+  color:white;
   text-align:center;
-  padding:30px 15px;
-  background:#000;
-  border-top:2px solid gold;
+  padding:40px 20px;
   font-size:14px;
-  margin-top:40px;
+  margin-top:60px;
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">BCTX®™ Budget Bail Bonds®™</div>
-</header>
-
+<h1>Budget Bail Bonds®™</h1>
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="ClientRequests.html">Requests</a>
-<a href="BondInformation.html">Bond Information</a>
-<a href="BondProcessing.html" class="active">Bond Processing</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="clientrequests.html">Requests</a>
+  <a href="bondinformation.html">Bond Info</a>
+  <a href="bondprocessing.html" class="active">Bond Processing</a>
+  <a href="bellcountycontact.html">County Contact</a>
 </nav>
+</header>
 
 <section class="section">
 
-<h1>Bond Processing Procedures</h1>
+  <div class="card">
+    <h2>Bond Payment Procedure Outlines</h2>
+    <ol>
+      <li>The bond process is initiated at the point of contact with the Client/Detainee and upon confirmation of responsibility as the designated cosigner/guarantor.</li>
+      <li>All bond payments must be successfully posted to the detaining Sheriff's County Account and confirmed with the Release Sergeant on shift or the superseding Release Deputy.</li>
+      <li>Payment details, agreements, and evidence of lawful transactions are delivered and confirmed via secure digital communications between the assigned Bond Agent and the cosigner/guarantor.</li>
+      <li>Once the bond is posted, the authorized Bond Agent appears at the holding facility to obtain the detainee's release.</li>
+      <li>All releases comply with federal, state, and county statutes, lawful procedures, and legal parameters pertaining to traditional bail bonds.</li>
+      <li>All client casefile financial interactions can be confirmed by the company's Finance Department and are recorded in compliance with State & County Bond-Releasal Records standards and ethics.</li>
+    </ol>
+  </div>
 
-<div class="box">
-Our licensed agents adhere to strict lawful procedures to ensure every bond is executed efficiently, safely, and in compliance with Federal, State, and County regulations.
-</div>
-
-<h2>Payment Procedure Outlines</h2>
-
-<div class="step">
-<strong>1. Initiation of Bond Process</strong><br>
-The bond process begins at the point of contact with the Client/Detainee and at the time the individual is notified and confirmed as the designated Cosigner/Guarantor responsible for the bond.
-</div>
-
-<div class="step">
-<strong>2. Posting Bond Payments</strong><br>
-All bond payments must be successfully posted to the Detaining Sheriff's County Account and confirmed with the Release Sergeant on shift or the immediate superseding Release Deputy.
-</div>
-
-<div class="step">
-<strong>3. Transaction Confirmation</strong><br>
-All bond payment details, agreements, and proof of lawful transactions are delivered and confirmed via digital multi-media communication between the assigned Bond Agent and the designated Cosigner/Guarantor.
-</div>
-
-<div class="step">
-<strong>4. Physical Release</strong><br>
-Once the bond is posted with the Sheriff's County Account, the authorized Bond Agent will appear at the Holding Facility to obtain the Client/Detainee's physical release.
-</div>
-
-<div class="step">
-<strong>5. Compliance with Law</strong><br>
-All bond releases are subject to Federal, State, and County laws, lawful procedures, and applicable legal parameters governing traditional bail bonds, issuance, authorization, and execution.
-</div>
-
-<div class="step">
-<strong>6. Financial Recordkeeping</strong><br>
-All Client Casefile financial interactions and transactions can be confirmed by the Company's Finance Department. Records are maintained in compliance with State & County Bond Release Records Administration & Management standards of ethics.
-</div>
-
-<h2>Need Assistance?</h2>
-
-<div class="box">
-For further assistance, questions, or concerns regarding bond processing, contact our office and ask to speak with a licensed agent.<br>
-<strong>📞 +1-(254)-244-2059</strong><br>
-Available 24 Hours / 7 Days
-</div>
+  <div class="card">
+    <h2>Special Notes</h2>
+    <ul>
+      <li>All payments must be verified before release coordination.</li>
+      <li>Clients must maintain an active debit card on file for bond transactions.</li>
+      <li>Licensed Bond Agents provide full guidance throughout the process.</li>
+      <li>For pretrial release, mental health, or substance abuse rehabilitation submissions, our agents facilitate all necessary documentation and approvals.</li>
+      <li>For further questions, concerns, or inquiries, please contact our office and ask to speak with a Licensed Agent: <strong>+1-(254)-595-5493</strong></li>
+    </ul>
+  </div>
 
 </section>
 
 <footer>
-<p>© 2026 Budget Bail Bonds®™ | Bell County, Texas</p>
+1902 S Loop 121, Belton, TX 76513<br>
+BailBudgetsAtBellCOTX@consultant.com<br>
+Budget Bail Bonds®™
 </footer>
 
 </body>
