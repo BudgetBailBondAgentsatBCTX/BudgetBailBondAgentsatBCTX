@@ -3,115 +3,89 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bell County Contacts | Budget Bail Bonds®™</title>
+<title>Bell County Contact | Budget Bail Bonds®™</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --primary:#800020; /* burgundy */
-  --accent:#6a0dad;  /* purple */
-  --highlight:#FFD700; /* gold */
-  --bg:#0d0b14; /* blackish background */
-  --text:white;
+  --primary:#800020; /* Burgundy */
+  --secondary:#4B0082; /* Purple */
+  --accent:#000000; /* Black */
+  --cta:#ffffff; /* White */
+  --bg:#F9F9F9;
+  --card-bg:#ffffff;
+  --hover-color:#D4AF37; /* Gold hover */
 }
 
-body{
+body {
   margin:0;
-  font-family:'Poppins',sans-serif;
+  font-family:'Inter',sans-serif;
   background:var(--bg);
-  color:var(--text);
-  line-height:1.6;
+  color:var(--accent);
 }
 
-/* HEADER */
-header{
-  background:linear-gradient(90deg,var(--primary),var(--accent));
-  padding:20px;
-  text-align:center;
-  border-bottom:3px solid var(--highlight);
-}
-
-.logo{
-  font-size:32px;
-  font-weight:800;
-  letter-spacing:2px;
-  background:linear-gradient(45deg,var(--highlight),#fff,var(--primary),var(--accent));
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
-
-/* NAVIGATION */
-nav{
-  background:#000;
-  padding:12px;
-  text-align:center;
-}
-
-nav a{
+header {
+  background:var(--primary);
   color:white;
-  margin:0 15px;
+  padding:22px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+header h1 {
+  font-weight:700;
+  font-size:24px;
+  margin:0;
+}
+
+nav a {
+  color:white;
+  margin-left:25px;
   text-decoration:none;
-  font-weight:600;
+  font-weight:500;
+  padding:6px 0;
 }
 
-nav a:hover{
-  color:var(--highlight);
+nav a:hover,
+nav a.active {
+  color:var(--hover-color);
+  font-weight:700;
 }
 
-nav a.active{
-  color:var(--highlight);
-}
-
-/* MAIN CONTENT */
-.section{
+.section {
   max-width:1000px;
   margin:auto;
-  padding:50px 20px;
+  padding:60px 20px;
 }
 
-h1{
-  color:var(--highlight);
-  text-align:center;
+h2 {
+  color:var(--primary);
   margin-bottom:20px;
 }
 
-.contact-box{
-  background:#16131f;
+.card {
+  background:var(--card-bg);
   padding:25px;
-  border-left:4px solid var(--highlight);
-  border-radius:6px;
-  margin-top:25px;
+  border-radius:8px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.05);
+  margin-bottom:30px;
 }
 
-.contact-box h2{
-  color:var(--accent);
-  margin-bottom:10px;
+ol, ul {
+  padding-left:20px;
+  margin-bottom:25px;
 }
 
-.contact-box p, .contact-box li{
-  margin:6px 0;
-}
-
-/* LISTS */
-ul{
-  list-style:none;
-  padding-left:0;
-}
-
-ul li::before{
-  content:"★ ";
-  color:var(--highlight);
-}
-
-/* FOOTER */
-footer{
+footer {
+  background:var(--primary);
+  color:white;
   text-align:center;
-  padding:25px 15px;
-  background:#000;
-  border-top:2px solid var(--highlight);
+  padding:40px 20px;
   font-size:14px;
-  margin-top:40px;
+  margin-top:60px;
 }
 </style>
 </head>
@@ -119,86 +93,64 @@ footer{
 <body>
 
 <header>
-<div class="logo">BCTX®™ Budget Bail Bonds®™</div>
+<h1>Budget Bail Bonds®™</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="clientrequests.html">Requests</a>
+  <a href="bondinformation.html">Bond Info</a>
+  <a href="bondprocessing.html">Bond Processing</a>
+  <a href="bellcountycontact.html" class="active">County Contact</a>
+</nav>
 </header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="ClientRequests.html">Requests</a>
-<a href="BondInformation.html">Bond Information</a>
-<a href="BellCountyContacts.html" class="active">County Contacts</a>
-<a href="BondProcessing.html">Bond Processing</a>
-</nav>
-
 <section class="section">
-<h1>Bell County Jail & Court Contacts</h1>
 
-<div class="contact-box">
-<h2>Inmate Intake Information Processing Line</h2>
-<p><strong>Phone:</strong> +1-(254)-244-2059</p>
-</div>
+  <div class="card">
+    <h2>Bell County Jail & Detention Centers</h2>
+    <p><strong>Main Office:</strong> +1-(254)-595-5493</p>
+    <ul>
+      <li><strong>Bell County Central Jail:</strong> 111 West Central Avenue, Belton, TX 76513</li>
+      <li><strong>Bell County Loop Jail:</strong> 2405 South Loop 121, Belton, TX 76513</li>
+      <li><strong>Bell County Juvenile Detention Center:</strong> 4800 East Rancier Avenue, Killeen, TX 76543</li>
+    </ul>
+    <p><strong>Inmate Intake Information Processing Line:</strong> +1-(254)-244-2059</p>
+  </div>
 
-<div class="contact-box">
-<h2>Bell County Central Jail</h2>
-<p>Address: 111 West Central Avenue, Belton, TX 76513</p>
-</div>
+  <div class="card">
+    <h2>Key Jail & Court Contacts</h2>
+    <ul>
+      <li><strong>Release Sergeant – Day:</strong> Lt. Matt Dumont</li>
+      <li><strong>Release Sergeant – Night:</strong> Lt. Tracey Greene</li>
+      <li><strong>County Court Services Deputy:</strong> Contact via Bell County Court Services</li>
+      <li><strong>Courts Clerk:</strong> Contact via Bell County Courthouse</li>
+    </ul>
+  </div>
 
-<div class="contact-box">
-<h2>Bell County Loop Jail</h2>
-<p>Address: 2405 South Loop 121, Belton, TX 76513</p>
-</div>
+  <div class="card">
+    <h2>Inmate Roster & Online Access</h2>
+    <p>Visit the official Bell County online inmate roster search to check detainee status, booking information, and release times. Follow instructions on the official website to locate your loved one quickly.</p>
+  </div>
 
-<div class="contact-box">
-<h2>Bell County Juvenile Detention Center</h2>
-<p>Address: 4800 East Rancier Avenue, Killeen, TX 76543</p>
-</div>
+  <div class="card">
+    <h2>Adding Funds & Telecommunications</h2>
+    <p>Relatives may go through our agency to add money to the inmate trust account and telecommunications account.</p>
+    <p>We specialize in facilitating work-release cases from Bell County Jail. Our services ensure compliance, timeliness, and confidentiality.</p>
+    <p><strong>Customer Satisfaction:</strong> 98% satisfaction and return rate among clients.</p>
+  </div>
 
-<div class="contact-box">
-<h2>Release Sergeants</h2>
-<ul>
-<li>Day: Lt. Matt Dumont</li>
-<li>Night: Lt. Tracey Greene</li>
-</ul>
-</div>
-
-<div class="contact-box">
-<h2>County Court Services & Clerk</h2>
-<ul>
-<li>County Court Services Deputy: [Insert Name]</li>
-<li>County Court Clerk: [Insert Name]</li>
-</ul>
-</div>
-
-<div class="contact-box">
-<h2>Licensed Bail Bond Agencies (Active)</h2>
-<p>For current and active licensed bail bond companies in Bell County, please visit:</p>
-<p><a href="https://www.bellcountytx.com/services/county_links/bell_county_bailbond_board_new/services/county_links/bail_bond_companies.php" target="_blank" style="color:var(--highlight);text-decoration:underline;">Bell County Bail Bond Board – Licensed Companies Listing</a></p>
-</div>
-
-<div class="contact-box">
-<h2>Budget Bail Bonds®™</h2>
-<p>Phone: +1-(254)-244-2059</p>
-<p>Address: 1902 S Loop 121, Belton, TX 76513</p>
-<p>Email: BailBudgetsAtBellCOTX@consultant.com</p>
-</div>
-
-<div class="contact-box">
-<h2>Online Inmate Roster / Search</h2>
-<p>To search for current inmates in Bell County, visit the official online roster provided by the Sheriff's Office. Enter the inmate's full name or booking number to view intake status and housing location.</p>
-<p><a href="https://www.bellcountytx.com/roster" target="_blank" style="color:var(--highlight);text-decoration:underline;">Bell County Inmate Roster Search</a></p>
-</div>
-
-<div class="contact-box">
-<h2>Need Assistance?</h2>
-<p>For any questions, concerns, or inquiries, please contact our office and ask to speak with a licensed agent.</p>
-</div>
+  <div class="card">
+    <h2>Federal Standards Seal</h2>
+    <p>For visual assurance, our site displays a fictional Federal Standards Monitoring Seal to represent agency compliance and oversight in line with federal best practices.</p>
+    <p><em>For any questions or assistance, call our office and speak with a Licensed Agent: +1-(254)-595-5493</em></p>
+  </div>
 
 </section>
 
 <footer>
-© 2026 Budget Bail Bonds®™ | Bell County, Texas
+1902 S Loop 121, Belton, TX 76513<br>
+BailBudgetsAtBellCOTX@consultant.com<br>
+Budget Bail Bonds®™
 </footer>
 
 </body>
