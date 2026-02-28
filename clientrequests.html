@@ -5,207 +5,220 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Client Requests | Budget Bail Bonds®™</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-
-body{
-margin:0;
-font-family:'Poppins',sans-serif;
-background:#0d0b14;
-color:white;
+:root {
+  --primary:#800020; /* Burgundy */
+  --secondary:#4B0082; /* Purple */
+  --accent:#000000; /* Black */
+  --cta:#ffffff; /* White */
+  --bg:#F9F9F9;
+  --card-bg:#ffffff;
+  --hover-color:#D4AF37; /* Gold hover */
 }
 
-/* HEADER */
-header{
-background:linear-gradient(90deg,#800020,#3b0a45,#000);
-padding:18px 20px;
-text-align:center;
-border-bottom:3px solid gold;
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--accent);
 }
 
-.logo{
-font-size:34px;
-font-weight:800;
-letter-spacing:2px;
-background:linear-gradient(45deg,gold,#fff,#800020,#6a0dad);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+header {
+  background:var(--primary);
+  color:white;
+  padding:22px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
 }
 
-/* NAV */
-nav{
-background:#000;
-padding:12px;
-text-align:center;
+header h1 {
+  font-weight:700;
+  font-size:24px;
+  margin:0;
 }
 
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:600;
+nav a {
+  color:white;
+  margin-left:25px;
+  text-decoration:none;
+  font-weight:500;
+  padding:6px 0;
 }
 
-nav a:hover{
-color:gold;
+nav a:hover,
+nav a.active {
+  color:var(--hover-color);
+  font-weight:700;
 }
 
-/* SECTION */
-.section{
-max-width:900px;
-margin:auto;
-padding:50px 20px;
+.section {
+  max-width:900px;
+  margin:auto;
+  padding:60px 20px;
 }
 
-.section h2{
-color:gold;
-text-align:center;
-margin-bottom:25px;
+form {
+  background:var(--card-bg);
+  padding:30px;
+  border-radius:8px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  margin-bottom:40px;
 }
 
-/* CONTACT BOX */
-.contact-box{
-background:#16131f;
-padding:25px;
-border-radius:8px;
-border-left:4px solid gold;
-margin-bottom:35px;
+form h2 {
+  color:var(--primary);
+  margin-bottom:20px;
 }
 
-.contact-box p{
-margin:8px 0;
+label {
+  display:block;
+  margin-top:15px;
+  font-weight:600;
 }
 
-/* FORM */
-form{
-display:flex;
-flex-direction:column;
+input, select, textarea {
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+  border:1px solid #ccc;
+  border-radius:4px;
+  font-size:14px;
 }
 
-label{
-margin-top:12px;
-margin-bottom:4px;
+textarea {
+  resize:vertical;
+  min-height:100px;
 }
 
-input, textarea, select{
-padding:12px;
-border:none;
-border-radius:4px;
-font-size:15px;
+button {
+  margin-top:25px;
+  background:var(--primary);
+  color:white;
+  border:none;
+  padding:14px 25px;
+  font-size:15px;
+  border-radius:5px;
+  cursor:pointer;
 }
 
-textarea{
-min-height:100px;
-resize:vertical;
+button:hover {
+  background:var(--secondary);
 }
 
-button{
-margin-top:20px;
-padding:14px;
-border:none;
-background:gold;
-font-weight:700;
-font-size:16px;
-cursor:pointer;
-border-radius:4px;
+.small-note {
+  font-size:12px;
+  margin-top:15px;
+  opacity:.7;
 }
 
-button:hover{
-background:#ffd700cc;
+footer {
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+  font-size:14px;
+  margin-top:60px;
 }
 
-/* NOTICE */
-.notice{
-font-size:13px;
-color:#bbb;
-margin-top:15px;
-line-height:1.6;
+/* Responsive */
+@media (max-width:768px){
+  header {flex-direction:column; align-items:flex-start;}
+  nav {margin-top:10px;}
 }
-
-/* FOOTER */
-footer{
-text-align:center;
-padding:30px 15px;
-background:#000;
-border-top:2px solid gold;
-font-size:14px;
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">BCTX®™ Budget Bail Bonds®™</div>
-</header>
-
+<h1>Budget Bail Bonds®™</h1>
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="ClientRequests.html">Requests</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="clientrequests.html" class="active">Requests</a>
+  <a href="bondinformation.html">Bond Info</a>
+  <a href="bondprocessing.html">Bond Processing</a>
+  <a href="bellcountycontact.html">County Contact</a>
 </nav>
+</header>
 
 <section class="section">
 
-<h2>Contact & Bond Request Intake</h2>
+  <!-- QUICK SURVEY®™ -->
+  <form action="#" method="POST">
+    <h2>Client Contact Information Survey (QUICK SURVEY®™)</h2>
 
-<div class="contact-box">
-<p><strong>📞 Office:</strong> (254) 244-2059</p>
-<p><strong>📍 Location:</strong> 1902 S Loop 121, Belton, Texas</p>
-<p><strong>🕒 Availability:</strong> 24 Hours / 7 Days</p>
-<p><strong>📧 Email:</strong> budgetbailbondstx@gmail.com</p>
-</div>
+    <label>Full Name</label>
+    <input type="text" name="client_fullname" required>
 
-<h2>Submit a Bond Request</h2>
+    <label>Age</label>
+    <input type="number" name="client_age" min="18" required>
 
-<form>
+    <label>Relation to Detainee</label>
+    <input type="text" name="relation" required>
 
-<label>Your Name</label>
-<input type="text" placeholder="Full Name" required>
+    <label>Occupation</label>
+    <input type="text" name="occupation" required>
 
-<label>Phone Number</label>
-<input type="tel" placeholder="Best contact number" required>
+    <label>Address (Street / City / State)</label>
+    <input type="text" name="address" required>
 
-<label>Email Address</label>
-<input type="email" placeholder="Optional">
+    <button type="submit">Submit Survey</button>
+    <p class="small-note">
+      All information collected is used strictly for casefile processing and contact coordination with our agency.
+    </p>
+  </form>
 
-<label>Defendant's Full Name</label>
-<input type="text" placeholder="Person in custody">
+  <!-- Request Contact Form -->
+  <form action="#" method="POST">
+    <h2>Request Contact / Case Information</h2>
 
-<label>County / Jail Location</label>
-<input type="text" placeholder="Bell County or facility name">
+    <label>Full Name</label>
+    <input type="text" name="fullname" required>
 
-<label>Charges (if known)</label>
-<input type="text" placeholder="Optional">
+    <label>Phone Number</label>
+    <input type="tel" name="phone" required>
 
-<label>Bond Amount (if known)</label>
-<input type="text" placeholder="Optional">
+    <label>Email Address</label>
+    <input type="email" name="email">
 
-<label>How can we help?</label>
-<textarea placeholder="Provide any details that may help speed up processing"></textarea>
+    <label>Defendant's Full Name</label>
+    <input type="text" name="defendant">
 
-<button type="submit">Submit Request</button>
+    <label>County of Arrest</label>
+    <input type="text" name="county">
 
-<p class="notice">
-Submitting this form does not create a financial obligation. A licensed agent
-will contact you to verify case details, confirm eligibility, and explain the
-bond process and requirements.
-</p>
+    <label>Estimated Bond Amount (if known)</label>
+    <input type="text" name="bondamount">
 
-<p class="notice">
-All information is kept confidential and used solely for lawful bond processing
-and verification purposes.
-</p>
+    <label>Preferred Contact Method</label>
+    <select name="contact_method">
+      <option>Phone Call</option>
+      <option>Text Message</option>
+      <option>Email</option>
+    </select>
 
-</form>
+    <label>Additional Case Details</label>
+    <textarea name="details"></textarea>
+
+    <button type="submit">Submit Request</button>
+
+    <p class="small-note">
+      Submission of this form does not constitute bond approval. All requests are subject to identity verification and underwriting review.
+      For further assistance or questions, call our office and ask to speak with a Licensed Agent.
+    </p>
+  </form>
 
 </section>
 
 <footer>
-<p>© 2026 Budget Bail Bonds®™ | Bell County, Texas</p>
+1902 S Loop 121, Belton, TX 76513<br>
+BailBudgetsAtBellCOTX@consultant.com<br>
+Budget Bail Bonds®™
 </footer>
 
 </body>
