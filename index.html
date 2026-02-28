@@ -3,225 +3,211 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Budget Bail Bonds®™ | Bell County, TX</title>
+<title>Budget Bail Bonds®™ | Belton, TX</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-
-body{
-margin:0;
-font-family:'Poppins',sans-serif;
-background:#0d0b14;
-color:white;
+:root {
+  --primary:#800020; /* Burgundy */
+  --secondary:#4B0082; /* Purple */
+  --accent:#000000; /* Black */
+  --cta:#ffffff; /* White text for CTA buttons */
+  --bg:#F9F9F9; /* Light background */
+  --card-bg:#ffffff;
+  --hover-color:#D4AF37; /* Gold accent hover */
 }
 
-/* HEADER */
-header{
-background:linear-gradient(90deg,#800020,#3b0a45,#000);
-padding:18px 20px;
-text-align:center;
-border-bottom:3px solid gold;
+/* Global Styles */
+body {
+  margin:0;
+  font-family:'Inter', sans-serif;
+  background:var(--bg);
+  color:var(--accent);
 }
 
-/* GRAPHIC TEXT LOGO */
-.logo{
-font-size:44px;
-font-weight:800;
-letter-spacing:2px;
-background:linear-gradient(45deg,gold,#ffffff,#800020,#6a0dad);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-text-shadow:0 0 12px rgba(255,215,0,0.35);
+header {
+  background:var(--primary);
+  color:white;
+  padding:22px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
 }
 
-.tagline{
-font-size:14px;
-letter-spacing:2px;
-color:#ddd;
-margin-top:4px;
+header h1 {
+  font-weight:700;
+  font-size:24px;
+  margin:0;
 }
 
-/* NAV */
-nav{
-background:#000;
-padding:12px;
-text-align:center;
+nav a {
+  color:white;
+  margin-left:25px;
+  text-decoration:none;
+  font-weight:500;
+  padding:6px 0;
 }
 
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:600;
+nav a:hover,
+nav a.active {
+  color:var(--hover-color);
+  font-weight:700;
 }
 
-nav a:hover{
-color:gold;
+/* Hero Section */
+.hero {
+  background:linear-gradient(135deg, var(--primary), var(--secondary));
+  color:white;
+  text-align:center;
+  padding:120px 20px;
 }
 
-/* HERO */
-.hero{
-text-align:center;
-padding:70px 20px;
-background:radial-gradient(circle at top,#3b0a45,#0d0b14);
+.hero h2 {
+  font-size:42px;
+  margin-bottom:15px;
+  font-weight:700;
 }
 
-.hero h1{
-font-size:42px;
-margin-bottom:10px;
-color:gold;
+.hero p {
+  font-size:20px;
+  margin-bottom:25px;
 }
 
-.hero p{
-max-width:700px;
-margin:auto;
-font-size:18px;
-line-height:1.6;
+.cta {
+  display:inline-block;
+  background:white;
+  color:var(--primary);
+  padding:16px 32px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:700;
+  transition:.3s;
 }
 
-/* BADGE STRIP */
-.badges{
-margin-top:35px;
-font-size:15px;
-letter-spacing:1px;
-color:#ddd;
+.cta:hover {
+  background:var(--hover-color);
+  color:white;
 }
 
-/* CTA BUTTON */
-.cta-btn{
-display:inline-block;
-margin-top:30px;
-background:gold;
-color:black;
-padding:16px 36px;
-font-weight:700;
-border-radius:6px;
-text-decoration:none;
+/* Section Cards */
+.section {
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
 }
 
-.cta-btn:hover{
-background:white;
+.section h3 {
+  color:var(--primary);
+  font-size:28px;
+  margin-bottom:25px;
+  text-align:center;
 }
 
-/* INFO SECTION */
-.section{
-padding:60px 20px;
-max-width:1000px;
-margin:auto;
-text-align:center;
+.card-grid {
+  display:flex;
+  flex-wrap:wrap;
+  gap:25px;
+  justify-content:center;
 }
 
-.section h2{
-color:gold;
-margin-bottom:20px;
+.card {
+  background:var(--card-bg);
+  padding:28px;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  min-width:260px;
+  text-align:center;
+  transition:.3s;
 }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:30px;
+.card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
 }
 
-.card{
-background:#16131f;
-padding:25px;
-border-radius:10px;
-border:1px solid rgba(255,215,0,0.15);
+.card strong {
+  display:block;
+  font-size:18px;
+  margin-bottom:6px;
 }
 
-.card h3{
-color:gold;
-margin-bottom:10px;
+/* Footer */
+footer {
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+  font-size:14px;
 }
 
-/* FOOTER */
-footer{
-text-align:center;
-padding:30px 15px;
-background:#000;
-font-size:14px;
-border-top:2px solid gold;
+.footer-note {
+  margin-top:12px;
+  font-size:12px;
+  opacity:.7;
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:1.5;
 }
 
-.footer-note{
-margin-top:10px;
-color:#bbb;
-font-size:13px;
+/* Responsive */
+@media (max-width:768px){
+  header {flex-direction:column; align-items:flex-start;}
+  nav {margin-top:10px;}
+  .hero h2 {font-size:32px;}
+  .hero p {font-size:18px;}
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">BCTX®™</div>
-<div class="tagline">BUDGET BAIL BONDS®™ • BELL COUNTY AUTHORITY</div>
+  <h1>Budget Bail Bonds®™</h1>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="clientrequests.html">Requests</a>
+    <a href="bondinformation.html">Bond Info</a>
+    <a href="bondprocessing.html">Bond Processing</a>
+    <a href="bellcountycontact.html">County Contact</a>
+  </nav>
 </header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-<a href="legal.html">Legal</a>
-</nav>
-
 <section class="hero">
-<h1>Fast • Confidential • Professional Release</h1>
-<p>
-Budget Bail Bonds®™ proudly serves Bell County with dependable bail bond services,
-specializing in <strong>Pretrial Release</strong>, <strong>Mental Health Placement</strong>,
-and <strong>Substance Abuse Rehabilitation Submission</strong>.
-</p>
-
-<div class="badges">
-⚖ County Compliance • ⭐ Trusted Service • 🔒 Confidential Processing
-</div>
-
-<a href="contact.html" class="cta-btn">Request Assistance</a>
+  <h2>Structured. Compassionate. Immediate.</h2>
+  <p>Belton & Bell County 24/7 Bail Coordination</p>
+  <a href="tel:+12545955493" class="cta">Call Now: +1-(254)-595-5493</a>
 </section>
 
 <section class="section">
-<h2>Why Choose Budget Bail Bonds®™</h2>
+  <h3>Our Leadership Team</h3>
+  <div class="card-grid">
+    <div class="card"><strong>Sol Re</strong>Owner</div>
+    <div class="card"><strong>Dorian Wes</strong>General Manager</div>
+    <div class="card"><strong>Steve Scottes</strong>Senior Bond Agent</div>
+  </div>
+</section>
 
-<div class="cards">
-
-<div class="card">
-<h3>24/7 Agent Availability</h3>
-<p>Licensed agents are available around the clock to assist with release processing.</p>
-</div>
-
-<div class="card">
-<h3>Pretrial Release Specialists</h3>
-<p>We assist qualified clients in navigating pretrial release eligibility.</p>
-</div>
-
-<div class="card">
-<h3>Rehabilitation Placement Support</h3>
-<p>Submission assistance for mental health and substance abuse rehabilitation programs.</p>
-</div>
-
-<div class="card">
-<h3>Confidential & Secure</h3>
-<p>All case information is handled with discretion and strict verification standards.</p>
-</div>
-
-</div>
+<section class="section">
+  <h3>Our Specializations</h3>
+  <div class="card-grid">
+    <div class="card"><strong>Pretrial Release</strong>Specialized case coordination</div>
+    <div class="card"><strong>Mental & Substance Rehab</strong>Center submissions</div>
+    <div class="card"><strong>Work-Release Facilitation</strong>Bell County Jail</div>
+  </div>
 </section>
 
 <footer>
-<p>📞 Office: (254) 244-2059</p>
-<p>📍 1902 S Loop 121, Belton, Texas</p>
-
+1902 S Loop 121, Belton, TX 76513<br>
+BailBudgetsAtBellCOTX@consultant.com<br>
+Budget Bail Bonds®™<br>
 <div class="footer-note">
-For further assistance or for any questions, concerns, or inquiries,
-please contact our office and ask to speak with a <strong>Licensed Agent</strong>.
+For further assistance or inquiries, call our office and ask for a Licensed Agent.
 </div>
-
-<p style="margin-top:15px;">© 2026 Budget Bail Bonds®™ | Bell County, Texas</p>
 </footer>
 
 </body>
