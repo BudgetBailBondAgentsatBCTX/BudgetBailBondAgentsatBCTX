@@ -3,203 +3,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About & Legal Authority | Budget Bail Bonds®™</title>
+<title>About | Budget Bail Bonds®™</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-
-body{
-margin:0;
-font-family:'Poppins',sans-serif;
-background:#0d0b14;
-color:white;
+:root {
+  --primary:#800020; /* Burgundy */
+  --secondary:#4B0082; /* Purple */
+  --accent:#000000; /* Black */
+  --cta:#ffffff; /* White */
+  --bg:#F9F9F9;
+  --card-bg:#ffffff;
+  --hover-color:#D4AF37; /* Gold hover */
 }
 
-/* HEADER */
-header{
-background:linear-gradient(90deg,#800020,#3b0a45,#000);
-padding:18px 20px;
-text-align:center;
-border-bottom:3px solid gold;
+body {
+  margin:0;
+  font-family:'Inter', sans-serif;
+  background:var(--bg);
+  color:var(--accent);
 }
 
-.logo{
-font-size:34px;
-font-weight:800;
-letter-spacing:2px;
-background:linear-gradient(45deg,gold,#fff,#800020,#6a0dad);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+header {
+  background:var(--primary);
+  color:white;
+  padding:22px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
 }
 
-/* NAV */
-nav{
-background:#000;
-padding:12px;
-text-align:center;
+header h1 {
+  font-weight:700;
+  font-size:24px;
+  margin:0;
 }
 
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:600;
+nav a {
+  color:white;
+  margin-left:25px;
+  text-decoration:none;
+  font-weight:500;
+  padding:6px 0;
 }
 
-nav a:hover{
-color:gold;
+nav a:hover,
+nav a.active {
+  color:var(--hover-color);
+  font-weight:700;
 }
 
-/* SECTION */
-.section{
-max-width:1000px;
-margin:auto;
-padding:60px 20px;
+.section {
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
 }
 
-.section h2{
-color:gold;
-margin-bottom:20px;
-text-align:center;
+.section h2 {
+  color:var(--primary);
+  font-size:28px;
+  margin-bottom:20px;
 }
 
-.section p{
-line-height:1.7;
-margin-bottom:18px;
+.section p,
+.section li {
+  font-size:16px;
+  line-height:1.6;
+  margin-bottom:12px;
 }
 
-/* HIGHLIGHT BOX */
-.highlight{
-background:#16131f;
-border-left:4px solid gold;
-padding:20px;
-margin:30px 0;
-border-radius:6px;
+ul {
+  padding-left:20px;
+  margin-bottom:20px;
 }
 
-/* LIST */
-ul{
-line-height:1.8;
+footer {
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+  font-size:14px;
 }
 
-/* FOOTER */
-footer{
-text-align:center;
-padding:30px 15px;
-background:#000;
-border-top:2px solid gold;
-font-size:14px;
+.footer-note {
+  margin-top:12px;
+  font-size:12px;
+  opacity:.7;
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:1.5;
 }
 
-.footer-note{
-margin-top:10px;
-color:#bbb;
-font-size:13px;
+/* Responsive */
+@media (max-width:768px){
+  header {flex-direction:column; align-items:flex-start;}
+  nav {margin-top:10px;}
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">BCTX®™ Budget Bail Bonds®™</div>
+  <h1>Budget Bail Bonds®™</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="clientrequests.html">Requests</a>
+    <a href="bondinformation.html">Bond Info</a>
+    <a href="bondprocessing.html">Bond Processing</a>
+    <a href="bellcountycontact.html">County Contact</a>
+  </nav>
 </header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</nav>
-
 <section class="section">
+  <h2>Our Founding & Leadership</h2>
+  <p>Budget Bail Bonds®™ was established to provide structured, disciplined, and compassionate bail bond services in Bell County. Led by local operational experts, our agency balances urgency with responsibility for each client case.</p>
+  <p>From our Belton headquarters, we maintain hands-on leadership focused on compliance, accountability, and direct community engagement. Every casefile is handled with discretion and respect for the legal process.</p>
 
-<h2>Who We Are</h2>
+  <h2>Corporate Governance & Legal Compliance</h2>
+  <p>We operate under a private leadership framework, adhering strictly to Texas bail statutes and Bell County regulations. Internal financial controls, identity verification, and documented compliance procedures guide every bond execution.</p>
+  <p>Budget Bail Bonds®™ is county contracted with the Sheriff’s Holding Facilities and maintains accredited standing with private monitoring agencies and the Better Business Bureau.</p>
+  <p>All bonds are subject to underwriting review, identity verification, and financial confirmation before filing. Payment timelines vary by method, and funds must clear prior to bond release.</p>
 
-<p>
-Budget Bail Bonds®™ is a Bell County–serving bail bond agency committed to
-fast, lawful, and professional release assistance. We understand that an arrest
-can be overwhelming, and our mission is to guide families through the release
-process with clarity, dignity, and urgency.
-</p>
+  <h2>Community Outreach & Specialized Services</h2>
+  <ul>
+    <li>Rehabilitation and mental health placement guidance</li>
+    <li>Community-based and faith-oriented partnership support</li>
+    <li>Educational guidance for first-time bond clients</li>
+    <li>Pretrial release and work-release facilitation</li>
+  </ul>
+  <p>Our philosophy recognizes that families often encounter the bail process unexpectedly. We provide structured release coordination while guiding families toward stabilizing resources whenever appropriate.</p>
 
-<p>
-Our licensed agents provide confidential assistance and ensure that each bond
-is processed in accordance with Texas law and Bell County judicial procedures.
-</p>
+  <h2>Strategic Vision</h2>
+  <p>Belton anchors our operational strategy. Expansion is deliberate, ensuring service quality, financial integrity, and regulatory compliance remain central in all regions we serve.</p>
 
-<div class="highlight">
-<strong>Our Mission:</strong><br>
-To provide reliable, lawful, and compassionate release assistance while helping
-clients navigate the legal process responsibly and efficiently.
-</div>
-
-<h2>Lawful Bond Procedures</h2>
-
-<p>
-All bail bonds are executed in strict compliance with Texas statutes,
-Bell County judicial requirements, and court-ordered release conditions.
-Each case undergoes verification and documentation review to ensure
-lawful eligibility and accurate filing.
-</p>
-
-<ul>
-<li>Identity and case verification required</li>
-<li>Court bond eligibility confirmation</li>
-<li>Documentation and compliance processing</li>
-<li>Adherence to judicial release conditions</li>
-<li>Confidential handling of all client records</li>
-</ul>
-
-<h2>County Compliance & Legal Standing</h2>
-
-<p>
-Budget Bail Bonds®™ operates in accordance with Bell County regulations
-and maintains professional working relationships with local detention
-facilities and judicial offices.
-</p>
-
-<div class="highlight">
-We are county compliant and coordinate with Sheriff's Holding Facilities
-for lawful release processing and detention verification procedures.
-</div>
-
-<h2>Professional Credentials & Affiliations</h2>
-
-<p>
-We maintain professional standards recognized by both public and private
-entities and uphold ethical conduct in all release operations.
-</p>
-
-<ul>
-<li>Compliance with county and state bond regulations</li>
-<li>Recognized professional service standards</li>
-<li>Ethical business practices & financial transparency</li>
-<li>Better Business Bureau standards alignment</li>
-<li>Coordination with legal professionals & court systems</li>
-</ul>
-
-<h2>Confidentiality & Client Protection</h2>
-
-<p>
-All client information is handled with discretion and safeguarded
-through secure verification and documentation practices. We are committed
-to protecting the privacy and legal rights of every individual we serve.
-</p>
-
-<div class="highlight">
-For further assistance or for any questions, concerns, or inquiries,
-please contact our office and ask to speak with a <strong>Licensed Agent</strong>.
-</div>
-
+  <p class="footer-note">
+  For further assistance or any questions, call our office and ask to speak with a Licensed Agent.
+  </p>
 </section>
 
 <footer>
-<p>📞 Office: (254) 244-2059</p>
-<p>📍 1902 S Loop 121, Belton, Texas</p>
-<p>© 2026 Budget Bail Bonds®™ | Bell County, Texas</p>
+1902 S Loop 121, Belton, TX 76513<br>
+BailBudgetsAtBellCOTX@consultant.com<br>
+Budget Bail Bonds®™
 </footer>
 
 </body>
